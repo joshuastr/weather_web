@@ -1,0 +1,16 @@
+html{
+  background-color: black;
+}
+
+body {
+  margin-top: 20%;
+  font-family: 'Muli';
+  text-align: center;
+  color: white;
+}
+
+#city-name{
+  font-size: 30px;
+  letter-spacing:2px;
+  font-weight: 400;
+}
