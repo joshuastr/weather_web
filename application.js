@@ -10,14 +10,9 @@ var main = function(){
       success: function(result){
         console.log("C", result);
         var geocodingAPI = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+ position.coords.latitude + "," + position.coords.longitude +"&key=AIzaSyB_Wf6i4nSGTiMFh2vkdTGgBqIaM-xKJM0";
-
-        // $.get("http://ipinfo.io", function(response) {
-        //   console.log("D", response);
-        //   $("#city-name").text(response.city);
-        // }, "jsonp");
         $.getJSON(geocodingAPI, function (json) {
           console.log("E", json);
-          $("#city-name").text(json.results[4].address_components[2].long_name);
+          $("#city-name").text(json.results[4].address_components[1].short_name);
         });
         $("#current-conditions").text(result.currently.summary);
         $("#current-temperature").append(((result.currently.temperature - 32) * 5/9).toFixed() + " " + "Celcius");
