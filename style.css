@@ -5,12 +5,41 @@ html{
 body {
   margin-top: 20%;
   font-family: 'Muli';
-  text-align: center;
   color: white;
 }
 
-#city-name{
+#main-container{
+  text-align:center;
+  margin:auto;
+}
+
+#weather-container {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+#weather-container #city-name {
   font-size: 30px;
   letter-spacing:2px;
   font-weight: 400;
 }
+
+#weather-image{
+    display: inline-block;*/
+    position:relative;*/
+}
+
+#weather-image img{
+  top: 20px;
+  height: 90px;
+  width: 90px;
+}
+
+#weather-description{
+  text-align: center;
+}
+
+/*#weather-advice{
+  text-align: center;
+}*/
