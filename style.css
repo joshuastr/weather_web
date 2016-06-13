@@ -1,11 +1,11 @@
 html{
-  background-color: black;
+  background-color: white;
 }
 
 body {
   margin-top: 20%;
   font-family: 'Muli';
-  color: white;
+  color: rgb(106, 106, 106);
 }
 
 #main-container{
